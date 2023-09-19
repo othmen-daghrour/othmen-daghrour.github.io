@@ -1,0 +1,37 @@
+.input_container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.skills_input{
+    width: 240px;
+}
+
+.Projects_List_Container{
+    width: 720px;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    /* justify-self: center; */
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+p{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Tool{
+    border: 2px gray solid;
+    width: 80px;
+    padding: 12px;
+}
