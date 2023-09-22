@@ -7,43 +7,139 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="app.js" defer></script>
-    <div class="input_container">
-        <input type="text" id="skills" placeholder="Programming Language, Framework, Library" class="skills_input">   
+    <script src="app.js" defer type="module"></script>
+    <nav>
+        <img src="flags/EN_flag.png" alt="English" class="supported-language" id="supported-languages">
+        <select name="Language" id="language">
+            <option value="FR">FR</option>
+            <option value="EN" selected>EN</option>
+            <option value="IT">IT</option>
+            <option value="DE">DE</option>
+        </select>
+    </nav>
+    <div class="circle-blue"></div>
+    <div class="square-red"></div>
+    <div class="circle-green"></div>
+    <section class="introduction">
+        <img src="ME.jpg" alt="Daghrour Othmen" class="profile-picture">
+        <summary id="summary-content"></summary>
+    </section>
+    <div class="button-choice">
+        <button type="button">All</button>
+        <button type="button">Front-End</button>
+        <button type="button">Back-End</button>
+        <button type="button">Databases</button>
     </div>
-    <div id="Projects_List" class="Projects_List_Container">
-        <p>Project#1 Tasks Automation</p>
-        <p>Project#2 Remote PC Controller</p>
-        <p>Project#3 Workflow Tracker</p>
-        <p>Project#4 Landing Page</p>
-        <p>Project#5 Paper Text Converter AI</p>
-        <p>Project#6 Higher Lower Game</p>
-        <p>Project#7 Dashboard UI</p>
-        <p>Project#8 E-commerce App </p>
+    <div class="button-display">
+        <button type="button" id="Display_two">2</button>
+        <button type="button" id="Display_four">4</button>
+        <button type="button" id="Display_six">6</button>
     </div>
-    <div>
-        <section>
-            <div class="Tool">JavaScript</div>
-            <div class="Tool">TypeScript</div>
-            <div class="Tool">jQuery</div>
-            <div class="Tool">React</div>
-            <div class="Tool">Redux</div>
-            <div class="Tool">Node.js</div>
-            <div class="Tool">ExpressJS</div>
-            <div class="Tool">GraphQL</div>
-            <div class="Tool">Git</div>
-            <div class="Tool">Postman</div>
-            <div class="Tool">SASS</div>
-            <div class="Tool">Docker</div>
-            <div class="Tool">Jenkins</div>
-            <div class="Tool">PHP</div>
-            <div class="Tool">PostgreSQL</div>
-            <div class="Tool">MongoDB</div>
-            <div class="Tool">C++</div>
-            <div class="Tool">Bash</div>
-            <div class="Tool">Linux</div>
-            <div class="Tool">Powershell</div>
-        </section>
-    </div>
+    <section class="Technologies-and-Tools" id="tools">
+       <div class="card-tool">
+        <img src="./tools/React-logo-PNG.png" alt="React">
+        <h4>React</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Redux-logo-PNG.png" alt="Redux">
+        <h4>Redux</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/MUI-logo-PNG.png" alt="Material UI">
+        <h4>Material UI</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/TailwindCSS-logo.PNG" alt="TailwindCSS">
+        <h4>Tailwind CSS</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/GraphQL-logo-PNG.png" alt="GraphQL">
+        <h4>GraphQL</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/SASS-logo-PNG.png" alt="SASS">
+        <h4>Sass</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/NodeJS-logo-PNG.png" alt="Nodejs">
+        <h4>Node.js</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Django-logo-PNG.png" alt="Django">
+        <h4>Django</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Laravel-logo-PNG.png" alt="Laravel">
+        <h4>Laravel</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Flutter-logo-PNG.png" alt="Flutter">
+        <h4>Flutter</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Redis-logo-PNG.png" alt="Redis">
+        <h4>Redis</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/PostgreSQL-Logo-PNG.png" alt="PostgreSQL">
+        <h4>PostgreSQL</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/MongoDB-logo-PNG.png" alt="MongoDB">
+        <h4>MongoDB</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/rabbitmq-logo-PNG.png" alt="RabbitMQ">
+        <h4>RabbitMQ</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Docker-logo-PNG.png" alt="Docker">
+        <h4>Docker</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Jenkins-logo-PNG.png" alt="Jenkins">
+        <h4>Jenkins</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Powershell-logo-PNG.png" alt="Powershell">
+        <h4>Powershell</h4>
+       </div>
+       <div class="card-tool">
+        <img src="./tools/Cypress-logo-PNG.png" alt="Cypress">
+        <h4>Cypress</h4>
+       </div>
+    </section>
+    <section class="Projects">
+     <article class="article-container">
+      <h4>Automation Filling Forms</h4>
+     </article>
+     <article class="article-container">
+      <h4>Italy guide landing page</h4>
+     </article>
+     <article class="article-container">
+      <h4>Autombile Landing page</h4>
+     </article>
+     <article class="article-container">
+      <h4>Restaurent Menu Generator</h4>
+     </article>
+     <article class="article-container">
+      <h4>Poll Generator</h4>
+     </article>
+     <article class="article-container">
+      <h4>E-commerce website</h4>
+     </article>
+     <article class="article-container">
+      <h4>Fashion and clothes Landing page</h4>
+     </article>
+     <article class="article-container">
+       <h4>Reddit commenting system</h4>
+     </article>
+     <article class="article-container">
+        <h4>Web Scrapper</h4>
+     </article>
+    </section>
+    <section class="footer-container">
+
+    </section>
 </body>
 </html>
