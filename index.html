@@ -3,14 +3,45 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <body>
+<div class="Main_Stats_Container">
+
 <div class="stats_container">
-    <canvas id="myChart" style="width:100%;max-width:800px"></canvas>   
-</div>
-<div class="stats_container">
-    <canvas id="myChart2" style="width:100%;max-width:800px"></canvas>   
+    <h2>معتمدية بني خلاد</h2>
+    <canvas id="myChartBK" style="width:100%;max-width:600px"></canvas>   
 </div>
 
-<canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+<div class="stats_container">
+    <h2>معتمدية الحمامات</h2>
+    <canvas id="myChartHA" style="width:100%;max-width:600px"></canvas>   
+</div>
+
+<div class="stats_container">
+    <h2>معتمدية تاكلسة</h2>
+    <canvas id="myChartTA" style="width:100%;max-width:600px"></canvas>   
+</div>
+
+<div class="stats_container">
+    <h2>معتمدية قرمبالية</h2>
+    <canvas id="myChartGR" style="width:100%;max-width:600px"></canvas>   
+</div>
+
+<div class="stats_container">
+    <h2>معتمدية منزل بوزلفة</h2>
+    <canvas id="myChartMB" style="width:100%;max-width:600px"></canvas>   
+</div>
+
+<div class="stats_container">
+    <h2>معتمدية سليمان</h2>
+    <canvas id="myChartSO" style="width:100%;max-width:600px"></canvas>   
+</div>
+
+<div class="stats_container">
+    <h2>معتمدية بوعرقوب</h2>
+    <canvas id="myChartBO" style="width:100%;max-width:600px"></canvas>   
+</div>
+
+</div>
+
 
 <script>
 var xValues = [
@@ -95,15 +126,38 @@ var xValues = [
 'ريم  دبش',
 
 ];
-var yValues = [10,9,4,7,0,1,3,12,7,9,10,9,4,7,0,1,3,12,7,9,10,9,4,7,0,1,3,12,7,9,10,9,4,7,0,1,3,12,7,9];
-var barColors = ["blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue","blue",];
+var yValues = [55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15];
 
-new Chart("myChart", {
+
+//Béni Khalled
+new Chart("myChartBK", {
   type: "bar",
   data: {
     labels: xValues,
     datasets: [{
-      backgroundColor: barColors,
+      backgroundColor: 'blue',
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: true
+    ,title:'title'
+},
+    title: {
+      display: true,
+      text: "عدد التحينات اليومية لكل عون تحيين",
+      color:'Red'
+    }
+  }
+});
+
+//Hammamet
+new Chart("myChartHA", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: 'Blue',
       data: yValues
     }]
   },
@@ -118,12 +172,14 @@ new Chart("myChart", {
     }
   }
 });
-new Chart("myChart2", {
+
+//Takelsa
+new Chart("myChartTA", {
   type: "bar",
   data: {
     labels: xValues,
     datasets: [{
-      backgroundColor: barColors,
+      backgroundColor: 'Blue',
       data: yValues
     }]
   },
@@ -138,6 +194,95 @@ new Chart("myChart2", {
     }
   }
 });
+
+//Grombelia
+new Chart("myChartGR", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: 'Blue',
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: true
+    ,title:'title'
+},
+    title: {
+      display: true,
+      text: "عدد التحينات اليومية لكل عون تحيين",
+      color:'red'
+    }
+  }
+});
+
+//Menzel Bouzela
+new Chart("myChartMB", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: 'Blue',
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: true
+    ,title:'title'
+},
+    title: {
+      display: true,
+      text: "عدد التحينات اليومية لكل عون تحيين",
+      color:'red'
+    }
+  }
+});
+
+//Soliaman
+new Chart("myChartSO", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: 'Blue',
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: true
+    ,title:'title'
+},
+    title: {
+      display: true,
+      text: "عدد التحينات اليومية لكل عون تحيين",
+      color:'red'
+    }
+  }
+});
+
+//Bou Argoub
+new Chart("myChartBO", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: 'Blue',
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: true
+    ,title:'title'
+},
+    title: {
+      display: true,
+      text: "عدد التحينات اليومية لكل عون تحيين",
+      color:'red'
+    }
+  }
+});
+
 </script>
 
 </body>
