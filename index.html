@@ -44,55 +44,9 @@
 
 
 <script>
-var xValues = [
-"يوسف  غيضاوي",
-"صفاء  الاسود",
-"فـــرح  المغربي",
-"حلمي  الزيادي",
-"عزمي  بنالحاج صالح",
-"سندس   الشرعبي",
-"مروان  مشرقي",
-"ذكرى  بوذينة",
-"لندة  الكافي",
-"هيفاء  بنخصيب",
-"رحمة  بوعافية",
-"عواطف  جرودي",
-"محمد  الظاهري",
-"صبرين  الشامخي",
-"ايمان  النفزي",
-"ندى  بلقاسمي",
-"عادل  بنحميده",
-"سندس   سلامي",
-"ايناس  خميسي",
-"وئام  ضفلي",
-"نورالهدى  الدلاجي",
-"جميلة  رايسي",
-"نورالهدى  عيساوي",
-"فداء  المحمدي",
-"سهيلة  بن ميرة",
-"مريم  عبيد",
-"سارة  بن محمد",
-'يسر  الغربي',
-'محمدعلي  رايسي',
-'اسلام  الفارحي',
-'اسلام  همادي',
-'مليكة  عنقود',
-'سعاد  الأجدل',
-'زكية  شورابي',
-'سوار  المثلوثي',
-'هناء  بن صالح',
-'محمد علي  الشماخي',
-'شيماء  الداهش',
-'جيهان  بريك',
-'العادل  بوصلاح',
-'مريم  يحي',
-'رهام  حمادة',
-'اية  الساسي',
-'ريان  بنعثمان',
-'ملاك  بن موسى',
-'هديل  بن فرح',
-'آية  لسود',
-'سامي  السعدي',
+//Béni Khalled
+var xValuesBK = [
+'نورس  عيساوي', 
 'جنات  السعداني',
 'مروة  البراني',
 'سيرين  سعداوي',
@@ -102,45 +56,105 @@ var xValues = [
 'حسان  اللواتي',
 'هنادي  أسودي',
 'وفاء  عرفاوي',
-'فدوى  بوعنان',
+'علاءالدين  السبوعي',
+'أحلام  الدريدي',
+];
+var yValuesBK = [8,8,8,8,8,8,8,8,8,8,8,8];
+
+
+//Hammamet
+var xValuesHA = ["هيفاء  بنخصيب","رحمة  بوعافية","عواطف  جرودي","محمد  الظاهري","صبرين  الشامخي",
+"ايمان  النفزي",
+"ندى  بلقاسمي",
+"عادل  بنحميده",
+"سندس   سلامي",
+"ايناس  خميسي",
+"وئام  ضفلي",
+'أمير  المزلوط',
+'سندة  بسباس',];
+var yValuesHA = [8,8,8,8,8,8,8,8,8,8,8,8,8];
+
+//Takelsa
+var xValuesTA = ["فـــرح  المغربي",
+"حلمي  الزيادي",
+"عزمي  بنالحاج صالح",
+'سيف الدين  العميري',         
+"مروان  مشرقي", 
+"ذكرى  بوذينة", 
+"سندس   الشرعبي",
+"لندة  الكافي",];
+var yValuesTA = [8,8,8,8,8,8,8,8,];
+
+//Gromeblia
+var xValuesGR = ["جميلة  رايسي",
+"نورالهدى  عيساوي",
+"فداء  المحمدي",
+"سهيلة  بن ميرة",
+"مريم  عبيد",
+"سارة  بن محمد",
+'لمية  باسطي',
+'يسر  الغربي',
+'محمدعلي  رايسي',
+'اسلام  الفارحي',
+'اسلام  همادي',
+'مروى  المبروكي',
+'سيرين  الفيضة',];
+var yValuesGR = [8,8,8,8,8,8,8,8,8,8,8,8,8,];
+
+//Menzel Bouzela
+var xValuesMB = ['فدوى  بوعنان',
 'أمل  العويني',
 'آمال  بنحزاز',
 'محمد ايهاب  الحمامي',
 'حسام الدين  بن محمد',
 'وئام  الكبير',
-'أمير  المزلوط',
-'احلام  بومنيجل',
-'نورس  عيساوي',
-'منيرة  الجبالي',
-'علاءالدين  السبوعي',
-'أحلام  الدريدي',
-'سيف الدين  العميري',
-'يوسف  الماجري',
 'سحر  شوشان',
 'سوار  بن زيد',
-'مروى  المبروكي',
-'سندة  بسباس',
-'لطيفة  بوصلاح',
-'لمية  باسطي',
-'سيرين  الفيضة',
-'ريم  دبش',
-
+'ريم  دبش', 
 ];
-var yValues = [55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15,55, 49, 44, 24, 15];
+var yValuesMB = [8,8,8,8,8,8,8,8,8];
 
+//Soliman
+var xValuesSO = ["نورالهدى  الدلاجي",
+'مليكة  عنقود',
+'سعاد  الأجدل',
+'زكية  شورابي',
+'منيرة  الجبالي',
+'لطيفة  بوصلاح',
+'سوار  المثلوثي',
+'هناء  بن صالح',
+'محمد علي  الشماخي',
+'شيماء  الداهش',
+'جيهان  بريك',
+'العادل  بوصلاح',
+'يوسف  الماجري',];
+var yValuesSO = [8,8,8,8,8,8,8,8,8,8,8,8,8];
+
+//Bou Argoub
+var xValuesBO = ['مريم  يحي',
+'رهام  حمادة',
+'سامي  السعدي',
+'اية  الساسي',
+'ريان  بنعثمان',
+'ملاك  بن موسى',
+'احلام  بومنيجل',
+"صفاء  الاسود",
+'هديل  بن فرح',
+'آية  لسود',];
+var yValuesBO = [8,8,8,8,8,8,8,8,8,8,];
 
 //Béni Khalled
 new Chart("myChartBK", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: xValuesBK,
     datasets: [{
       backgroundColor: 'blue',
-      data: yValues
+      data: yValuesBK
     }]
   },
   options: {
-    legend: {display: true
+    legend: {display: false
     ,title:'title'
 },
     title: {
@@ -155,14 +169,14 @@ new Chart("myChartBK", {
 new Chart("myChartHA", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: xValuesHA,
     datasets: [{
-      backgroundColor: 'Blue',
-      data: yValues
+      backgroundColor: 'Red',
+      data: yValuesHA
     }]
   },
   options: {
-    legend: {display: true
+    legend: {display: false
     ,title:'title'
 },
     title: {
@@ -177,14 +191,14 @@ new Chart("myChartHA", {
 new Chart("myChartTA", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: xValuesTA,
     datasets: [{
-      backgroundColor: 'Blue',
-      data: yValues
+      backgroundColor: 'Green',
+      data: yValuesTA
     }]
   },
   options: {
-    legend: {display: true
+    legend: {display: false
     ,title:'title'
 },
     title: {
@@ -199,14 +213,14 @@ new Chart("myChartTA", {
 new Chart("myChartGR", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: xValuesGR,
     datasets: [{
-      backgroundColor: 'Blue',
-      data: yValues
+      backgroundColor: 'Yellow',
+      data: yValuesGR
     }]
   },
   options: {
-    legend: {display: true
+    legend: {display: false
     ,title:'title'
 },
     title: {
@@ -221,14 +235,14 @@ new Chart("myChartGR", {
 new Chart("myChartMB", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: xValuesMB,
     datasets: [{
-      backgroundColor: 'Blue',
-      data: yValues
+      backgroundColor: 'Purple',
+      data: yValuesMB
     }]
   },
   options: {
-    legend: {display: true
+    legend: {display: false
     ,title:'title'
 },
     title: {
@@ -243,14 +257,14 @@ new Chart("myChartMB", {
 new Chart("myChartSO", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: xValuesSO,
     datasets: [{
-      backgroundColor: 'Blue',
-      data: yValues
+      backgroundColor: 'Brown',
+      data: yValuesSO
     }]
   },
   options: {
-    legend: {display: true
+    legend: {display: false
     ,title:'title'
 },
     title: {
@@ -265,20 +279,20 @@ new Chart("myChartSO", {
 new Chart("myChartBO", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: xValuesBO,
     datasets: [{
       backgroundColor: 'Blue',
-      data: yValues
+      data: yValuesBO
     }]
   },
   options: {
     legend: {display: true
-    ,title:'title'
+    ,text:'title'
 },
     title: {
       display: true,
       text: "عدد التحينات اليومية لكل عون تحيين",
-      color:'red'
+      color:'Red'
     }
   }
 });
