@@ -330,9 +330,8 @@ excel_file.addEventListener('change', (event) => {
 
         var sheet_data = XLSX.utils.sheet_to_json(work_book.Sheets[sheet_name[0]], {header:1});
 
-        console.log(sheet_data[2][1],sheet_data[2][7]);
-        yValuesBO[6]= 12;
-        // console.log(typeof parseInt(sheet_data[2][7]));
+        console.log(sheet_data);
+       
 
     }});
 
